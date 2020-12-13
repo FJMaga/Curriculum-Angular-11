@@ -1,0 +1,20 @@
+.text article button {
+    height: 40px;
+    padding: 0 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 15px 20px rgba(54, 24, 79, 0.5);
+    z-index: 3;
+    color: #695681;
+    background-color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    transition: all 0.3s ease;
+  }
+ .text article button:hover {
+    box-shadow: 0px 10px 10px -10px rgba(54, 24, 79, 0.5);
+    transform: translateY(5px);
+    background: #FB8A8A;
+    color: white;
+  }

@@ -1,0 +1,39 @@
+.layout-management-list-demo {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    
+   }
+   
+   :host {
+    width: 100%;
+   }
+
+   blockquote {
+    border: 1px solid #7fcfb3;
+    padding:30px;
+    border-radius: 25%;
+    width: 230px;
+    height: 200px;
+    font-family: Georgia;
+    font-size:30px; /* tamaño */
+    line-height:50px;
+    
+    }
+    blockquote:before { 
+    content: "\201C"; /* inicio comilla */
+    font-family: Georgia;
+    font-size:80px; /* tamaño */
+    font-weight: bold; line-height:0px;
+    color: #ff4081; /* Color  */
+    vertical-align:middle;
+    }
+    blockquote:after { /* final */
+    content: "\201D";
+    font-family: Georgia;
+    font-size:80px; /* tamaño */
+    font-weight: bold;
+    color:#ff4081; /* Color  */
+    vertical-align:middle;
+    padding-top:10px;
+    }

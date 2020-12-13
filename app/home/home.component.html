@@ -1,0 +1,45 @@
+
+<td-layout class="layout-management-list-demo" sidenavWidth="280px">
+
+  <td-layout-manage-list opened="false" mode="side">
+    <mat-toolbar td-sidenav-content>Menú</mat-toolbar>
+    <div td-sidenav-content>
+      <app-nav></app-nav>
+    </div>
+    <mat-toolbar>
+      <button [@tdRotate]="triggerState" (click)="triggerState = !triggerState" color="accent"  mat-button tdLayoutManageListToggle>
+        <mat-icon>reply_all</mat-icon>
+      </button>
+      <p>Javier Magariño</p>
+    </mat-toolbar>
+  
+
+    <div style=" width: 20em;float: left; margin-top: 4em;" >
+      
+        <img style="margin-left: 12%;" src='https://avataaars.io/?avatarStyle=Circle&topType=ShortHairShortFlat&accessoriesType=Prescription02&hairColor=Brown&facialHairType=BeardLight&facialHairColor=Brown&clotheType=Hoodie&clotheColor=Heather&eyeType=Side&eyebrowType=Default&mouthType=Smile&skinColor=Light'
+        />
+
+        <h1 style="margin-left: 35%;margin-top: 2em;">FULL STACK DEVELOPER</h1>
+        <blockquote style="margin-left: 15%;margin-top: 5em;">De mi pasión mi profesión</blockquote>
+      
+    </div>
+
+    <div style="margin-left: 25%;margin-top: 0;display: flex;">
+      <td-chart [style.height.px]="900" [style.width.px]="1250">
+        <td-chart-tooltip [trigger]="'item'"></td-chart-tooltip>
+        <td-chart-series
+          td-wordCloud
+          shape="star"
+          [sizeRange]="[8, 30]"
+          [rotationRange]="[-30, 30]"
+          [data]="componentRandomWords"
+        ></td-chart-series>
+      </td-chart>
+    </div>
+
+  <app-footer></app-footer>
+
+</td-layout-manage-list>
+
+</td-layout>
+

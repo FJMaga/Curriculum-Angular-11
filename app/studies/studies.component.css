@@ -1,0 +1,82 @@
+.example-card-1 {
+    max-width: 500px;
+    border-radius: 5%;
+  }
+  
+  .example-header-image-1 {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Escudo_de_la_Universidad_Complutense_de_Madrid.svg/1200px-Escudo_de_la_Universidad_Complutense_de_Madrid.svg.png');
+    background-size: cover;
+  }
+
+  .example-card-2 {
+    max-width: 500px;
+    border-radius: 5%;
+  }
+  
+  .example-header-image-2 {
+    background-image: url('https://www.estudiadeporte.com/wp-content/uploads/campus-fp-sport-estudia-deporte.png');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .example-card-3 {
+    max-width: 500px;
+    border-radius: 5%;
+  }
+  
+  .example-header-image-3 {
+    background-image: url('https://es.cloudera.com/content/dam/www/marketing/images/icons/h02/h02-icon-any-cloud.png');
+    background-size: cover;
+    
+  }
+  
+  p{
+      font-weight: bold;
+  }
+
+  /*Escritorio*/
+@media (min-width: 1199.98px) {
+
+  
+  
+}
+/*Fin Escritorio*/
+
+/*Tablet*/
+/*Portrait*/
+@media (min-width: 576px) and (max-width: 991.98px) and (orientation:portrait) {
+  #card{
+    margin-left: 7em;
+    width: 100vw;
+  }
+  
+}
+
+/*landscape*/
+@media (min-width: 991.98px) and (max-width: 1199.98px)and (orientation:landscape) {
+  #card{
+    margin-left: 15em;
+    width: 100vw; 
+  }
+  
+}
+/*fin tablet*/
+
+/*movil*/
+/*Portrait*/
+/*Default*/
+@media (max-width: 575.98px)and (orientation:portrait) {
+  #card{
+    width: 90vw;
+  }
+  
+}
+@media (min-width: 576px) and (max-width: 991.98px) and (orientation:landscape) {
+  #card{
+    margin-left: 4em;
+    width: 100vw;
+  }
+ 
+}
+
+/*fin movil*/

@@ -1,0 +1,104 @@
+<td-layout class="layout-management-list-demo" sidenavWidth="280px">
+
+    <td-layout-manage-list opened="false" mode="side">
+      <mat-toolbar td-sidenav-content>Menú</mat-toolbar>
+      <div td-sidenav-content>
+        <app-nav></app-nav>
+      </div>
+      <mat-toolbar>
+        <button [@tdRotate]="triggerState" (click)="triggerState = !triggerState" color="accent"  mat-button tdLayoutManageListToggle>
+          <mat-icon>reply_all</mat-icon>
+        </button>
+        <p>Estudios Javier</p>
+      </mat-toolbar>
+  
+     
+
+      <div style="padding-top: 5%;padding-left: 5%;padding-bottom:5%; float: left;">
+        <mat-card  id="card" class="example-card-2" style=" background-color: #282d3d">
+          <mat-card-header>
+            <div mat-card-avatar class="example-header-image-2"></div>
+            <mat-card-title style="color: white;">CampusFP</mat-card-title>
+            <mat-card-subtitle style="color: white;">Grado Superior en Desarrollo de Aplicaciones Multiplataforma</mat-card-subtitle>
+          </mat-card-header>
+          <img mat-card-image src="https://ia-latam.com/wp-content/uploads/2019/01/edu-1.jpg" alt="">
+          <mat-card-content>
+            
+            <p style="color: white;">2018 - 2020</p>
+            <p style="color: white;">
+              Técnico en Desarrollo de Aplicaciones Multiplataforma
+            </p>
+          </mat-card-content>
+          <mat-card-actions>
+            <div class="progress" style="border-radius: 5px;background-color: gray;">
+              <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" >
+                100%
+              </div>
+            </div>
+            <p style="color: rgb(94, 238, 94); text-align: center;">Completado</p>
+
+          </mat-card-actions>
+        </mat-card>
+        
+      </div>
+
+      <div style="padding-top: 5%;padding-left: 5%; padding-bottom:5%; float: left;">
+        <mat-card  id="card" class="example-card-3" style=" background-color: #282d3d">
+          <mat-card-header>
+            <div mat-card-avatar class="example-header-image-3"></div>
+            <mat-card-title style="color: white;">CFTIC</mat-card-title>
+            <mat-card-subtitle style="color: white;">Desarrollador Spark Big Data Cloudera</mat-card-subtitle>
+          </mat-card-header>
+          <img mat-card-image src="https://miro.medium.com/max/829/0*_gzHf4Afj1lZiW2V.png" alt="">
+          <mat-card-content>
+            <p style="color: white;">2020 - 2021</p>
+            <p style="color: white;">
+              200 horas (SQL, Python, Scala, Spark & Hadoop)
+            </p>
+          </mat-card-content>
+          <mat-card-actions>
+            <div class="progress" style="border-radius: 5px;background-color: gray;">
+              <div class="progress-bar bg-warning" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" >
+                45%
+              </div>
+            </div>
+            <p style="color: rgb(219, 163, 60); text-align: center;">En progreso</p>
+          </mat-card-actions>
+        </mat-card>
+        
+      </div>
+
+      <div style="padding-top: 5%;padding-left: 5%;padding-bottom:5%; float: left;">
+        <mat-card  id="card" class="example-card-1" style=" background-color: #282d3d">
+          <mat-card-header>
+            <div mat-card-avatar class="example-header-image-1"></div>
+            <mat-card-title style="color: white;">Universidad Complutense de Madrid</mat-card-title>
+            <mat-card-subtitle style="color: white;">Óptica y optometría</mat-card-subtitle>
+          </mat-card-header>
+          <img mat-card-image src="https://www.ufro.cl/images/icagenda/frontend/images/estudios.png" alt="">
+          <mat-card-content>
+            <p style="color: white;">
+              Cursado hasta 3º de diplomática de óptica y optometria
+            </p>
+          </mat-card-content>
+          <mat-card-actions>
+            <div class="progress" style="border-radius: 5px;background-color: gray;">
+              <div class="progress-bar bg-info" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" >
+                80%
+              </div>
+            </div>
+            <p style="color: rgb(240, 135, 135); text-align: center;">Parado</p>
+          </mat-card-actions>
+        </mat-card>
+        
+      </div>
+
+      <div style="float: left; width: 100%;">
+        <app-footer></app-footer>
+    </div>
+  
+    </td-layout-manage-list>
+
+   
+  
+  </td-layout>

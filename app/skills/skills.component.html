@@ -1,0 +1,57 @@
+<td-layout class="layout-management-list-demo" sidenavWidth="280px">
+
+    <td-layout-manage-list opened="false" mode="side">
+        <mat-toolbar td-sidenav-content="td-sidenav-content">Menú</mat-toolbar>
+        <div td-sidenav-content="td-sidenav-content">
+            <app-nav></app-nav>
+        </div>
+        <mat-toolbar>
+            <button
+                [@tdRotate]="triggerState"
+                (click)="triggerState = !triggerState"
+                color="accent"
+                mat-button="mat-button"
+                tdLayoutManageListToggle="tdLayoutManageListToggle">
+                <mat-icon>reply_all</mat-icon>
+            </button>
+            <p>Conocimientos Javier</p>
+        </mat-toolbar>
+
+          <div id="container" style="display:flex;">
+            <div id="columnas">
+                    <mat-card
+                        class="example-card-3"
+                        *ngFor="let item of skills;"
+                        style=" background-color: #282d3d; padding: 1em; margin: .5em; width: auto; height: auto;display:inline-block;
+                        ">
+                        <div >
+                            <p style="text-align: center; color: white;">{{item.name}}</p>
+
+                            <img
+                                src="assets/imagenes/logos/{{item.logo}}.svg"
+                                style="width: 14em; background-position: center center;"></div>
+                            <ngb-rating 
+                                [max]="5"
+                                [(rate)]="item.value"
+                                [readonly]="readonly"
+                                style="float: left; margin-top: 1em; margin-right: 1em; color: white;"></ngb-rating>
+                            <div style=" margin-top: 1em;">
+
+                                <h2 style="float: left; text-align: right; color: white;">{{item.value}}</h2>
+
+                                <p style="float: left; margin-top: 1em; color: white;">
+                                    / 5</p>
+                            </div>
+                        </mat-card>
+
+                      </div>    
+            </div>
+            <div style="float: left; width: 100%;">
+                <app-footer></app-footer>
+            </div>
+
+        </td-layout-manage-list>
+
+    </td-layout>
+
+  
